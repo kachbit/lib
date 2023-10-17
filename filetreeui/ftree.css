@@ -1,0 +1,48 @@
+.collapsed .treeSection {
+     display: none;
+}
+.treeSpan {
+     user-select: none;
+     margin: 0px;
+}
+.treeDiv {
+     color: black;
+     padding: 3px;
+     border-radius: 3px;
+     width: fit-content;
+}
+.hide {
+     display: none;
+}
+.show {
+     display: inline-block !important;
+}
+#arrow2 {
+     display: none;
+     margin-left:-36px;
+     background: transparent
+}
+#arrow1 {
+     margin-left:-36px;
+     background: transparent
+}
+.treeSpan > * {
+     margin-left: 15px;
+}
+
+.file,.folder {
+     padding-left:100%;
+     padding-right:100%;
+     margin:0 calc(-100% + 5px);
+     cursor: pointer;
+     background: #222222;
+     color:white;
+}
+.folder:hover,.file:hover {
+     color:white;
+     background:#333333;
+}
+#root,.treeContainer {
+    color:white;
+    background:#222222;  
+}
