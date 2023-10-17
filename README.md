@@ -11,6 +11,6 @@ https://kachbit.github.io/lib/filetreeui/ftree.js
 ```
 menu
 ```
-https://kachbit.github.io/menubar/menu.css
+https://kachbit.github.io/lib/filetreeui/menu.css
 https://kachbit.github.io/lib/filetreeui/menu.js
 ```
