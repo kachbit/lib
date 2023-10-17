@@ -1,0 +1,109 @@
+textarea {
+     outline: 0px none;
+     -moz-user-select: text;
+}
+ body,html {
+     background: #1c1e1f;
+     font-family: Consolas;
+     margin: 0px;
+     min-width: fit-content;
+     height: 100%;
+     width: 100%;
+     overflow-y: hidden;
+}
+ * {
+     user-select: none 
+}
+ #tabs {
+     display: flex;
+     background: transparent;
+     box-shadow: inset 0 -1px rgba(0, 0, 0, 0.125);
+     overflow: hidden;
+     height: 40px;
+     user-select: none;
+     -moz-user-select: none;
+     font-size: 14px;
+     color: white;
+}
+ .marker {
+     background: whitesmoke;
+     width: 1px;
+}
+ .tab:not(.newtab) {
+     padding: 0 8px;
+     flex: 1 1 240px;
+     min-width: 180px;
+     max-width: 180px;
+     margin-right: 1px;
+     background: #1b1d1e 
+}
+ .tab {
+     position: relative;
+     line-height: 40px;
+     overflow: hidden;
+     white-space: nowrap;
+     text-overflow: ellipsis;
+     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.125);
+     color: #858c98;
+}
+ .t-txt {
+     overflow: hidden;
+     white-space: nowrap;
+     text-overflow: ellipsis;
+     max-width: 160px;
+     margin: 0px;
+     padding: 0px;
+     display: inline-block 
+}
+ .t-x {
+    /* visibility:hidden */
+     width: 20px;
+     display: inline-block;
+     top: 5px;
+     position: relative;
+     right: 0;
+     float: right;
+}
+ .tab:hover {
+     opacity: 0.9 
+}
+ .tab:active {
+     background: #363636;
+}
+ .tab::after {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 3px;
+     background: #888;
+     transform: scaleX(0.9);
+     opacity: 0;
+     transition: all 0.25s cubic-bezier(0.2, 1, 0.2, 1);
+}
+ .tab.active::after {
+     transform: scaleX(1);
+     opacity: 1;
+}
+ .tab.active::after {
+     background: #3962ad;
+     opacity: 1;
+}
+ .tab.drag-over {
+     opacity: 0.7 
+}
+ .tab.active {
+     background: #121415;
+     color: white 
+}
+ .materialBoard {
+     background: #121415;
+     width: 100%;
+     height: 100%;
+     padding: 20px;
+     box-sizing: border-box;
+     color: #c6cee5;
+     font-family: Verdana;
+     position: fixed 
+}
