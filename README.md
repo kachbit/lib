@@ -14,3 +14,7 @@ menu
 https://kachbit.github.io/lib/menubarui/menu.css
 https://kachbit.github.io/lib/menubarui/menu.js
 ```
+editor
+```
+https://kachbit.github.io/lib/editor/editor.js
+```
